@@ -1,0 +1,109 @@
+body {
+  margin: 0;
+  text-align: center;
+  font-family: "Roboto", sans-serif;
+}
+
+.header-container {
+  margin: 20px 0;
+  font-size: 0.8rem;
+}
+
+.logo {
+  padding-bottom: 20px;
+  height: 150px;
+}
+
+.call-to-action-container {
+  background-color: black;
+  color: white;
+  padding: 60px;
+}
+
+.releases-container {
+  display: flex;
+  align-items: stretch;
+  color: white;
+  width: 100%;
+}
+
+.releases-container > * {
+  margin: 0;
+  text-align: center;
+  width: 25%;
+  padding: 90px 40px;
+}
+
+.first-release {
+  background-color: #9b5400;
+}
+
+.second-release {
+  background-color: #c16900;
+}
+
+.third-release {
+  background-color: #e37c01;
+}
+
+.fourth-release {
+  background-color: #ff8a00;
+}
+
+.solution-container {
+  display: flex;
+  width: 100%;
+  background-color: #ff8a00;
+  color: white;
+}
+
+.solution-container h3 {
+  margin: 0;
+  padding: 10% 20px;
+  font-size: 1.6rem;
+}
+
+.basketball {
+  width: 70%;
+}
+
+.receive-the-app-container {
+  background-color: black;
+  color: white;
+  padding-bottom: 40px;
+}
+
+.receive-the-app-container h1 {
+  margin: 0;
+  text-align: center;
+  padding-top: 20px;
+}
+
+.receive-the-app-container p {
+  font-size: 1.5rem;
+}
+
+.email-input {
+  background: #ffffff;
+  border: 2px solid rgba(140, 140, 140, 0.99);
+  box-sizing: border-box;
+  border-radius: 8px;
+  padding: 10px 10px;
+  margin-right: 10px;
+  font-size: 1rem;
+  width: 300px;
+}
+
+.btn-confirm {
+  background-color: #ff8800;
+  border-radius: 8px;
+  border: 2px solid #c86b00;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: Arial;
+  font-size: 20px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+}
