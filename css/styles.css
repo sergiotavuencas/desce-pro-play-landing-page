@@ -2,19 +2,57 @@ body {
   margin: 0;
   text-align: center;
   font-family: "Roboto", sans-serif;
+  height: 100%;
 }
 
 .header-container {
-  margin: 20px 0;
-  font-size: 0.8rem;
+  width: 100%;
 }
 
 .logo {
-  padding-bottom: 20px;
-  height: 150px;
+  height: 120px;
+}
+
+.call-to-action-background {
+  background-image: url("../images/soccer.jpg");
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  height: 500px;
+  width: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .call-to-action-container {
+  margin: 20px 0;
+  font-size: 1rem;
+  font-weight: bolder;
+  color: white;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin-left: auto;
+  margin-right: auto;
+  top: 17rem;
+}
+
+.btn-scroll-to-receive {
+  background-color: #ff8800;
+  border-radius: 8px;
+  border: 2px solid #c86b00;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Roboto", sans-serif;
+  font-size: 25px;
+  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  height: 60px;
+}
+
+.problem-container {
   background-color: black;
   color: white;
   padding: 60px;
@@ -101,7 +139,7 @@ body {
   display: inline-block;
   cursor: pointer;
   color: #ffffff;
-  font-family: Arial;
+  font-family: "Roboto", sans-serif;
   font-size: 20px;
   font-weight: bold;
   padding: 10px 20px;

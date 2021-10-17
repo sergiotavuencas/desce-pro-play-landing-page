@@ -9,6 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
     
     <!-- Hotjar Tracking Code for https://sergiotavuencas.github.io/desce-pro-play-landing-page/ -->
     <script>
@@ -26,28 +27,43 @@
 <body>
     <div class="header-container">
         <img class="logo" src="images/logo.png" alt="desce-pro-play-logo"/>
-        <h1>Encontre pessoas próximas a você para praticar seu esporte favorito</h1>
     </div>
 
+    <div class="call-to-action-background"></div>
+
     <div class="call-to-action-container">
+        <h1>Encontre pessoas próximas de você para praticar seu esporte favorito</h1>
+        <input 
+            class="btn-scroll-to-receive"
+            type="button" 
+            onClick="document.getElementById('receive-the-app').scrollIntoView();" 
+            value="Receber o App"
+        />
+    </div>
+
+    <div class="problem-container">
         <h1>Está cansado de não ter com quem jogar o seu esporte favorito?</h1>
         <h2>Nosso aplicativo é a solução ideal para o seu problema</h2>
     </div>
     
     <div class="releases-container">
         <div class="first-release">
+            <i class="fas fa-search fa-4x"></i>
             <h3>Encontre pessoas e locais próximos de você</h3>
         </div>
 
         <div class="second-release">
+            <i class="fas fa-map-marked-alt fa-4x"></i>
             <h3>Personalize a distâcia e o esporte de acordo com as suas preferências</h3>
         </div>
         
         <div class="third-release">
+            <i class="fas fa-users fa-4x"></i>
             <h3>Monte equipes e feche times para seus jogos</h3>
         </div>
 
         <div class="fourth-release">
+            <i class="fas fa-comments fa-4x"></i>
             <h3>Mande mensagens para seus amigos e combinem locais ou times</h3>
         </div>
     </div>
@@ -57,7 +73,7 @@
         <img class="basketball" src="images/basketball.jpg" alt="people-playing-basketball"/>
     </div>
 
-    <div class="receive-the-app-container">
+    <div id="receive-the-app" class="receive-the-app-container">
         <h1>Receba o App</h1>
         <p>Dê nos seu feedback, se inscreva e receba o App!</p>
         <input class="email-input" type="email" value="">
