@@ -1,30 +1,75 @@
-body {
+:root {
+  --orange-one: #9b5400;
+  --orange-two: #c16900;
+  --orange-three: #e37c01;
+  --orange-four: #ff8a00;
+
+  --white: #fff;
+  --black: #000;
+}
+
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--black);
   text-align: center;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
+  color: (--white);
   height: 100%;
 }
 
-.header-container {
+/********** Header Start **********/
+header {
+  background-color: var(--white);
+  height: 5.5rem;
   width: 100%;
+  position: fixed;
+  z-index: 1;
 }
 
-.logo {
-  height: 120px;
+header .container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
+header .logo {
+  height: 5rem;
+  margin-left: 1rem;
+  margin-top: 0.25rem;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--black);
+  font-size: 2rem;
+  margin-right: 1rem;
+}
+
+header nav a:hover {
+  text-decoration: none;
+  color: var(--orange-four);
+  font-weight: bold;
+}
+/********** Header End **********/
+
+/********** Main Start **********/
 .call-to-action-background {
   background-image: url("../images/soccer.jpg");
-  filter: blur(3px);
-  -webkit-filter: blur(3px);
-  height: 500px;
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  height: 40rem;
   width: 100%;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
 }
 
-.call-to-action-container {
+.call-to-action-elements {
   margin: 20px 0;
   font-size: 1rem;
   font-weight: bolder;
@@ -34,19 +79,44 @@ body {
   right: 0;
   margin-left: auto;
   margin-right: auto;
-  top: 17rem;
+  top: 8rem;
 }
 
-.btn-scroll-to-receive {
-  background-color: #ff8800;
+.call-to-action-elements > * {
+  margin-bottom: 1rem;
+}
+
+.call-to-action-elements p {
+  font-size: 1.1rem;
+}
+
+.call-to-action-elements input {
+  margin-top: 4rem;
+}
+
+.btn-to-prototype {
+  background-color: var(--orange-four);
   border-radius: 8px;
-  border: 2px solid #c86b00;
+  border: 4px solid var(--orange-one);
   display: inline-block;
   cursor: pointer;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
+  color: var(--white);
+  font-family: 'Anton', sans-serif;
   font-size: 25px;
-  font-weight: bold;
+  padding: 10px 20px;
+  text-decoration: none;
+  height: 60px;
+}
+
+.btn-to-prototype:hover {
+  background-color: var(--white);
+  border-radius: 8px;
+  border: 4px solid var(--orange-four);
+  display: inline-block;
+  cursor: pointer;
+  color: var(--black);
+  font-family: 'Anton', sans-serif;
+  font-size: 25px;
   padding: 10px 20px;
   text-decoration: none;
   height: 60px;
@@ -104,44 +174,20 @@ body {
 .basketball {
   width: 70%;
 }
+/********** Main End **********/
 
-.receive-the-app-container {
-  background-color: black;
+/********** Footer Start **********/
+footer .container {
   color: white;
-  padding-bottom: 40px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
-.receive-the-app-container h1 {
-  margin: 0;
-  text-align: center;
-  padding-top: 20px;
-}
-
-.receive-the-app-container p {
+footer .container p {
   font-size: 1.5rem;
 }
 
-.email-input {
-  background: #ffffff;
-  border: 2px solid rgba(140, 140, 140, 0.99);
-  box-sizing: border-box;
-  border-radius: 8px;
-  padding: 10px 10px;
-  margin-right: 10px;
-  font-size: 1rem;
-  width: 300px;
+footer .container > * {
+  padding-bottom: 1rem;
 }
-
-.btn-confirm {
-  background-color: #ff8800;
-  border-radius: 8px;
-  border: 2px solid #c86b00;
-  display: inline-block;
-  cursor: pointer;
-  color: #ffffff;
-  font-family: "Roboto", sans-serif;
-  font-size: 20px;
-  font-weight: bold;
-  padding: 10px 20px;
-  text-decoration: none;
-}
+/********** Footer End **********/

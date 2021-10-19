@@ -8,9 +8,71 @@
     <link rel="stylesheet" href="css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Roboto+Condensed&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css">    
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img class="logo" src="images/logo.png" alt="desce-pro-play-logo"/>
+            <nav>
+                <a href="">INÍCIO</a>
+                <a href="">SOBRE</a>
+                <a href="">CONTATO</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="call-to-action-container">
+            <div class="call-to-action-background"></div>
+            <div class="call-to-action-elements">
+                <h1>Encontre pessoas próximas de você com os mesmos interesses em esportes</h1>
+                <p>Após um longo período de isolamento social, aproveite o fim da pandemia para jogar seu esporte favorito</p>
+                <form target="_blank" action="https://www.figma.com/proto/znxAYR4dSHK63ZqSdnVos8/Perfis-Desce-pro-Play?node-id=71%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=71%3A2">
+                    <input class="btn-to-prototype" type="submit" value="Testar o protótipo" />
+                </form>
+            </div>
+        </div>
+
+        <div class="releases-container">
+            <div class="first-release">
+                <i class="fas fa-search fa-4x"></i>
+                <h3>Encontre pessoas e locais próximos de você</h3>
+            </div>
     
+            <div class="second-release">
+                <i class="fas fa-map-marked-alt fa-4x"></i>
+                <h3>Personalize a distâcia e o esporte de acordo com as suas preferências</h3>
+            </div>
+            
+            <div class="third-release">
+                <i class="fas fa-users fa-4x"></i>
+                <h3>Monte equipes e feche times para seus jogos</h3>
+            </div>
+    
+            <div class="fourth-release">
+                <i class="fas fa-comments fa-4x"></i>
+                <h3>Mande mensagens para seus amigos e combinem locais ou times</h3>
+            </div>
+        </div>
+    
+        <div class="solution-container">
+            <h3>Com o desce pro play, você pode encontrar outras pessoas que estão utilizando o protótipo perto de você para formar times de acordo com o esporte de sua preferência.</h3>
+            <img class="basketball" src="images/basketball.jpg" alt="people-playing-basketball"/>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <h1>Teste o Protótipo</h1>
+            <p>Dê nos seu feedback testando o nosso Protótipo!</p>
+            <form target="_blank" action="https://www.figma.com/proto/znxAYR4dSHK63ZqSdnVos8/Perfis-Desce-pro-Play?node-id=71%3A2&scaling=scale-down&page-id=0%3A1&starting-point-node-id=71%3A2">
+                <input class="btn-to-prototype" type="submit" value="TESTAR">
+            </form>
+        </div>
+    </footer>
+
     <!-- Hotjar Tracking Code for https://sergiotavuencas.github.io/desce-pro-play-landing-page/ -->
     <script>
         (function(h,o,t,j,a,r){
@@ -19,65 +81,8 @@
             a=o.getElementsByTagName('head')[0];
             r=o.createElement('script');r.async=1;
             r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-            a.appendChild(r);
+            a.prototypeendChild(r);
         })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
     </script>
-    
-</head>
-<body>
-    <div class="header-container">
-        <img class="logo" src="images/logo.png" alt="desce-pro-play-logo"/>
-    </div>
-
-    <div class="call-to-action-background"></div>
-
-    <div class="call-to-action-container">
-        <h1>Encontre pessoas próximas de você para praticar seu esporte favorito</h1>
-        <input 
-            class="btn-scroll-to-receive"
-            type="button" 
-            onClick="document.getElementById('receive-the-app').scrollIntoView();" 
-            value="Receber o App"
-        />
-    </div>
-
-    <div class="problem-container">
-        <h1>Está cansado de não ter com quem jogar o seu esporte favorito?</h1>
-        <h2>Nosso aplicativo é a solução ideal para o seu problema</h2>
-    </div>
-    
-    <div class="releases-container">
-        <div class="first-release">
-            <i class="fas fa-search fa-4x"></i>
-            <h3>Encontre pessoas e locais próximos de você</h3>
-        </div>
-
-        <div class="second-release">
-            <i class="fas fa-map-marked-alt fa-4x"></i>
-            <h3>Personalize a distâcia e o esporte de acordo com as suas preferências</h3>
-        </div>
-        
-        <div class="third-release">
-            <i class="fas fa-users fa-4x"></i>
-            <h3>Monte equipes e feche times para seus jogos</h3>
-        </div>
-
-        <div class="fourth-release">
-            <i class="fas fa-comments fa-4x"></i>
-            <h3>Mande mensagens para seus amigos e combinem locais ou times</h3>
-        </div>
-    </div>
-
-    <div class="solution-container">
-        <h3>Com o desce pro play, você pode encontrar outras pessoas que estão utilizando o App perto de você para formar times de acordo com o esporte de sua preferência.</h3>
-        <img class="basketball" src="images/basketball.jpg" alt="people-playing-basketball"/>
-    </div>
-
-    <div id="receive-the-app" class="receive-the-app-container">
-        <h1>Receba o App</h1>
-        <p>Dê nos seu feedback, se inscreva e receba o App!</p>
-        <input class="email-input" type="email" value="">
-        <input class="btn-confirm" type="submit" value="CONFIRMAR">
-    </div>
 </body>
 </html>
