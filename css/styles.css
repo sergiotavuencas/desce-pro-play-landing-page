@@ -18,17 +18,15 @@ body {
   background-color: var(--black);
   text-align: center;
   font-family: 'Roboto Condensed', sans-serif;
-  color: (--white);
   height: 100%;
 }
 
 /********** Header Start **********/
 header {
   background-color: var(--white);
-  height: 5.5rem;
   width: 100%;
   position: fixed;
-  z-index: 1;
+  z-index: 2;
 }
 
 header .container {
@@ -40,7 +38,6 @@ header .container {
 header .logo {
   height: 5rem;
   margin-left: 1rem;
-  margin-top: 0.25rem;
 }
 
 header nav a {
@@ -87,6 +84,7 @@ header nav a:hover {
 }
 
 .call-to-action-elements p {
+  margin-top: 4.5rem;
   font-size: 1.1rem;
 }
 
@@ -132,14 +130,18 @@ header nav a:hover {
   display: flex;
   align-items: stretch;
   color: white;
-  width: 100%;
+}
+
+.releases-container h3 {
+  margin-top: 1rem;
 }
 
 .releases-container > * {
   margin: 0;
   text-align: center;
   width: 25%;
-  padding: 90px 40px;
+  height: 20rem;
+  padding: 60px 40px;
 }
 
 .first-release {
@@ -160,19 +162,46 @@ header nav a:hover {
 
 .solution-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width: 100%;
-  background-color: #ff8a00;
-  color: white;
+  background-color: var(--white);
+  color: var(--black);
+}
+
+.solution-container img {
+  padding-top: 2rem;
+  height: 20rem;
+  width: 30rem;
 }
 
 .solution-container h3 {
   margin: 0;
-  padding: 10% 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
   font-size: 1.6rem;
 }
 
-.basketball {
-  width: 70%;
+.solution-container * > {
+  margin-left: 6rem;
+  margin-right: 6em;
+}
+
+
+.sport-box {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+.sports-carousel {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.sports-carousel img {
+  height: 100%;
+  width: 100%;
 }
 /********** Main End **********/
 

@@ -1,0 +1,54 @@
+@media screen and (max-width: 700px) {
+  header .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  header .container a:nth-child(3) {
+    margin-right: 0;
+  }
+
+  header .container > * {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .call-to-action-elements p {
+    font-size: 1.8rem;
+  }
+
+  .call-to-action-elements > * {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .releases-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .releases-container > * {
+    width: 100%;
+    font-size: 1.5rem;
+  }
+
+  .sports-carousel {
+    margin-top: 50px;
+  }
+
+  .solution-container img {
+    height: 12rem;
+    width: 15rem;
+  }
+
+  .solution-container h3  {
+    margin-left: 1.2rem;
+    margin-right: 1.2rem;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .descricao {
+    width: 50%;
+  }
+}
